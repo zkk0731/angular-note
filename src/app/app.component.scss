@@ -1,0 +1,14 @@
+nav {
+  margin: 24px 0;
+  a {
+    font-size: 24px;
+    margin: 0 12px;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .selected {
+    background-color: aqua;
+  }
+}

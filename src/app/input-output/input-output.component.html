@@ -1,0 +1,9 @@
+<label for="name">outter input</label>
+<input type="text" id="name" [(ngModel)]="name" />
+<h2>outter text: {{ name }}</h2>
+<h2>from Inner: {{ text }}</h2>
+<p>----------------------------------</p>
+<app-child
+  [fromOutterName]="name"
+  (pushToOutter)="getTextFromChild($event)"
+></app-child>

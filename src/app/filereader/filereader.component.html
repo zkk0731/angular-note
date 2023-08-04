@@ -1,0 +1,3 @@
+<input type="file" (change)="getImg($event)" />
+<br />
+<img *ngIf="imgUrl !== ''" [src]="imgUrl" alt="圖片" />

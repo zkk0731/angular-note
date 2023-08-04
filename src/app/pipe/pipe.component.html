@@ -1,0 +1,4 @@
+<label for="date">選擇日期</label>
+<input type="date" id="date" [(ngModel)]="date" />
+
+<h2>選擇的日期是 :{{ date | date : "yyyy/MM/dd" }}</h2>

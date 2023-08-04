@@ -1,0 +1,5 @@
+<h2>name: {{ name }}</h2>
+<p>phone: {{ phone }}</p>
+<br />
+<p>picture:</p>
+<img *ngIf="picUrl !== ''" [src]="picUrl" alt="picture" />

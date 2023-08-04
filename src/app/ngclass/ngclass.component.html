@@ -1,0 +1,6 @@
+<label for="huge">變大</label>
+<input type="checkbox" id="huge" [(ngModel)]="isHuge" />
+<label for="red">變紅色</label>
+<input type="checkbox" id="red" [(ngModel)]="isRed" />
+
+<h2 [ngClass]="{ huge: isHuge, red: isRed }">這是一段文字</h2>

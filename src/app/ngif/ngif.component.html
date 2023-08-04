@@ -1,0 +1,22 @@
+<label for="car">有車</label>
+<input type="checkbox" id="car" [(ngModel)]="hasCar" />
+<div>
+  <p>
+    小明 <span *ngIf="hasCar">有車</span>
+    <span *ngIf="!hasCar">沒車</span>
+  </p>
+
+  <p>小明 {{ hasCar ? "有車" : "沒車" }}</p>
+</div>
+<p>=============================</p>
+<div>
+  <label for="buger">漢堡</label>
+  <input type="radio" id="buger" name="meal" value="漢堡" [(ngModel)]="meal" />
+  <label for="steak">牛排</label>
+  <input type="radio" id="steak" name="meal" value="牛排" [(ngModel)]="meal" />
+  <label for="noodle">麵</label>
+  <input type="radio" id="noodle" name="meal" value="麵" [(ngModel)]="meal" />
+
+  <h2>今天吃:</h2>
+  <p>{{ meal }}</p>
+</div>
