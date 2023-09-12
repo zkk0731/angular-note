@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +13,8 @@ import { NgclassComponent } from './ngclass/ngclass.component';
 import { FilereaderComponent } from './filereader/filereader.component';
 import { FetchApiComponent } from './fetch-api/fetch-api.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { FormComponent } from './form/form.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +27,16 @@ import { PipeComponent } from './pipe/pipe.component';
     FilereaderComponent,
     FetchApiComponent,
     PipeComponent,
+    FormComponent,
+    ModalComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
